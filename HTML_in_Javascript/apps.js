@@ -1,7 +1,19 @@
 const h1 = document.querySelector(".hello h1");
 
 // function handleTitleClick(){
-//     h1.style.color = "blue";
+//     const currentColor = h1.style.color;
+//     let newColor;
+//     // console.log(h1.style.color);
+//     // h1.style.color = "blue";
+//     // console.log(h1.style.color);
+//     if(currentColor === "tomato"){
+//         newColor = "blue";
+//     }else if(currentColor === "blue"){
+//         newColor = "tomato";
+//     }else{
+//         newColor = "blue";
+//     }
+//     h1.style.color = newColor;
 // }
 
 function handleMouseEnter(){
@@ -14,22 +26,15 @@ function handleMouseLeave(){
     h1.innerText = "Mouse is gone!";
 }
 
+function handleConTextMenu(){
+    h1.style.color = "orange";
+    h1.innerText = "That was a rightclick!"
+}
+
 function handleWindowResize(){
     // document.body.style.background = "violet";
     h1.style.color = "violet";
     h1.innerText = "You just resize!";
-}
-
-function handleWindowCopy(){
-    alert("copier!");
-}
-
-function handleWindowOffline(){
-    alert("SOS no WIFI");
-}
-
-function handleWindowOnline(){
-    alert("All Good!!");
 }
 
 // h1.addEventListener("click",handleTitleClick);
@@ -40,7 +45,7 @@ h1.onmouseenter = handleMouseEnter;
 // h1.addEventListener("mouseleave",handleMouseLeave);
 h1.onmouseleave = handleMouseLeave;
 
+// h1.oncontextmenu = handleConTextMenu;
+window.addEventListener("contextmenu",handleConTextMenu)
+
 window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
