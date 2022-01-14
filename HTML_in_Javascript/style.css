@@ -1,11 +1,7 @@
 body{
-    background-color: beige;
+    background-color: violet;
 }
 
-h1{
-    color: cornflowerblue;
-}
-
-.clicked {
-    color: tomato;
+body div h1{
+    color: white;
 }
