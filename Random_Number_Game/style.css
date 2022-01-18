@@ -1,3 +1,15 @@
 .hidden{
     display: none;
 }
+
+#input_values div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#input_values div input{
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

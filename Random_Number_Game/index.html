@@ -8,11 +8,22 @@
     <title>RandomNumberGame</title>
 </head>
 <body>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <button>Log In</button>
+    <h1>Random Number Game</h1>
+    <form id="input_values">
+        <div id="random_number">
+            <h2>Generate a number between 0 and</h2>
+            <input min="0" max="10000" type="number" placeholder="input Number!!">
+        </div>
+        <div id="user_number">
+            <h3>Guess the number:</h3>
+            <input min="0" max="10000" type="number" placeholder="input Number!!">
+            <button>Play!</button>
+        </div>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <div id="result" class="hidden">
+        <p id="chose">You chose:,the machine chose:</p>
+        <p id="won_lost">You</p>
+    </div>
     <script src="./RandomNumber.js"></script>
 </body>
 </html>
