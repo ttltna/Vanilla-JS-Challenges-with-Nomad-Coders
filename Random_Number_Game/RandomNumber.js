@@ -17,11 +17,10 @@ function onLoginSubmit(event){
     //     console.log(userName);
     // }
     event.preventDefault();
-    loginForm.classList.add("hidden");
+    loginForm.classList.add(HIDDEN_CLASSNAME);
     const userName = loginInput.value;
-    console.log(userName);
-    loginUserName.classList.remove("hidden");
-    loginUserName.innerText = "Hello " + userName;
+    loginUserName.classList.remove(HIDDEN_CLASSNAME);
+    loginUserName.innerText = `Hello ${userName}`;
 }
 
 // loginButton.addEventListener("click",handleLoginBtnClick);
