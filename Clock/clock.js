@@ -27,11 +27,10 @@ function getClock(){
     let dmin = Math.ceil((dday_ms % (1000 * 60 * 60)) / (1000 * 60));
     let dsec = Math.ceil((dday_ms % (1000 * 60)) / 1000);
 
-
     // console.log(`nowTime = ${nowTime}, christmasTime = ${christmasTime}`);
     // console.log(`남은 시간 : ${dday_ms}`);
     // console.log("D-DAY까지 " + dday + "일 " + dhour + "시간 " + dmin + "분 " + dsec + "초 남았습니다.");
-    clock.innerText = `${dday}d ${dhour}h ${dmin}m ${dsec}s`;
+    clock.innerText = `${dday}d ${String(dhour).padStart(2,"0")}h ${String(dmin).padStart(2,"0")}m ${String(dsec).padStart(2,"0")}s`;
 }
 
 getClock();
