@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.linear_color{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+button{
+    z-index: 2;
+    position: fixed;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid white;
+
+    left: 47%;
+    top: 46%;
+}
